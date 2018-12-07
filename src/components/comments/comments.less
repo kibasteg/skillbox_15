@@ -1,0 +1,76 @@
+.comments {
+
+  padding: 24px;
+  background: #f2f2f2;
+
+}
+
+.comments-form {
+
+  margin-top: 24px;
+  border-top: 1px solid #dadada;
+
+  &__row {
+    margin-top: 24px;
+  }
+
+  &__label {
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+  }
+
+  input, button, textarea {
+    padding: 12px;
+    border: 1px solid #dadada;
+    font: 12px/12px Sans-Serif;
+    outline: none;
+  }
+
+  input[type=text], textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+  }
+
+  input[type=button], button {
+
+    border-color: #3e68a8;
+    background: #528CE0;
+    color: #fff;
+    cursor: pointer;
+
+    &[disabled] {
+
+      color: #80b5f9;
+      border-color: transparent;
+
+    }
+
+  }
+}
+
+.comments-item {
+
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dadada;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &__captions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    color: #8c8c8c;
+    font-size: 80%;
+  }
+}
